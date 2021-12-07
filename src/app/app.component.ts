@@ -69,7 +69,7 @@ export class AppComponent implements OnInit {
           group: truck,
           start: start,
           end: end,
-          content: 'Order ' + order,
+          content: 'Item ' + order,
         });
 
         order++;
@@ -85,7 +85,7 @@ export class AppComponent implements OnInit {
       end: new Date(1000 * 60 * 60 * 24 + new Date().valueOf()),
       editable: true,
       margin: {
-        item: 10, // minimal margin between items
+        item: 20, // minimal margin between items
         axis: 5, // minimal margin between items and the axis
       },
       orientation: 'top',
