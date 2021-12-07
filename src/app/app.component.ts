@@ -1,10 +1,8 @@
 import {
   Component,
-  VERSION,
   OnInit,
   ViewChild,
   ElementRef,
-  Renderer2,
 } from '@angular/core';
 import { DataSet } from 'vis-data/esnext';
 import { Timeline } from 'vis-timeline/esnext';
