@@ -38,10 +38,10 @@ export class AppComponent implements OnInit {
   getTimelineGroups() {
     // create groups
     this.groups = new DataSet([
-      { id: 1, content: 'Truck&nbsp;1' },
-      { id: 2, content: 'Truck&nbsp;2' },
-      { id: 3, content: 'Truck&nbsp;3' },
-      { id: 4, content: 'Truck&nbsp;4' },
+      { id: 1, content: 'Case 1' },
+      { id: 2, content: 'Case 2' },
+      { id: 3, content: 'Case&nbsp;3' },
+      { id: 4, content: 'Case&nbsp;4' },
     ]);
   }
 
