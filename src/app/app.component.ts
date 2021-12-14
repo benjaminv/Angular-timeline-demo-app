@@ -1,30 +1,43 @@
-import {
-  Component,
-  OnInit,
-  ViewChild,
-  ElementRef,
-} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Injectable } from '@angular/core';
 import { DataSet } from 'vis-data/esnext';
 import { Timeline } from 'vis-timeline/esnext';
+
+import { 
+  MatSnackBar,
+  MatSnackBarHorizontalPosition,
+  MatSnackBarVerticalPosition, 
+} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
+
 export class AppComponent implements OnInit {
   timeline: Timeline;
   options: {};
   data: any;
   groups: any;
 
+  horizontalPosition: MatSnackBarHorizontalPosition = 'right';
+  verticalPosition: MatSnackBarVerticalPosition = 'top';
+
   @ViewChild('timeline', { static: true }) timelineContainer: ElementRef;
-  constructor() {
+
+  constructor(private _snackBar: MatSnackBar) {
     this.getTimelineData();
     this.getTimelineGroups();
-    this.getOptions();
+    this.getOptions();  
   }
 
+  openSnackBar() {
+    this._snackBar.open('[Item 1] This is a pinned note. Will manage to use html.   [edit][position]', 'Close', {
+      horizontalPosition: this.horizontalPosition,
+      verticalPosition: this.verticalPosition,
+    });
+  };  
+  
   ngOnInit() {
     this.timeline = new Timeline(
       this.timelineContainer.nativeElement,
