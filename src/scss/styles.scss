@@ -1,5 +1,17 @@
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
 
+/* FontAwesome font path must be relative from the location of the compiled CSS file. 
+By default it will work from the root of the project. 
+If you want to use a different path, you can set the path here to overwrite:
+assuming you have copied the `webfonts directory into `assets` folder*/
+$fa-font-path:        "../assets/webfonts";
+
+/* Importing FontAwesome SCSS from node modules*/
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
+
 // This template has no custom styling
 // Insert any custom SCSS here!

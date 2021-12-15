@@ -1,0 +1,31 @@
+@import "../js/plugins/vis-timeline/styles/vis-timeline-graph2d.min.css";
+
+.split-container {
+    background: #f2f7f4;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    top:0;
+    height: calc(100vh - 115px);
+  }
+  
+  .split {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .gutter {
+      background-color: #eee;
+      background-repeat: no-repeat;
+      background-position: 50%;
+  }
+  
+  .gutter.gutter-horizontal {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+      cursor: col-resize;
+  }
+
+  .footer {
+    height: 50px;
+    line-height: 50px;
+ }
