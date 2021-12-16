@@ -1,5 +1,11 @@
-# [Start Bootstrap - Bare](https://startbootstrap.com/template/bare/)
+# based on [Start Bootstrap - Bare](https://startbootstrap.com/template/bare/)
+## Update - BH
+- Removed `clean` from `start` so that customised code will not be wiped out.  
+- Integrated Font Awesome 5.0.13 into the project.  
+- Integrated vis-timeline into the project.  
 
+
+----
 [Bare](https://startbootstrap.com/template/bare/) is a bare HTML starter template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This template serves as a basic project boilerplate perfect for creating modern, responsive websites and applications.
 
 ## Preview
