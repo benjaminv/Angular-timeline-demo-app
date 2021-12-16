@@ -4,15 +4,15 @@
     position: relative;
 }
 #timeline-master .menu {
-    position: -webkit-sticky; /* Safari */
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
     position: sticky;
     top: 8px;
     margin: 0 8px;
     z-index: 9999;
     text-align: right;
+}
+
+#timeline-master .vis-timeline {
+    margin-top: -24px !important;
 }
 
 /* split window controls */
@@ -28,12 +28,8 @@
     height: calc(100vh - 106px);
   }
 
-  #flex-1 {
-      overflow-y: scroll;
-  }
-  
-  #flex-2 {
-      overflow-y: scroll;
+  #flex-1, #flex-2 {
+      overflow-y: auto;
   }
     
   .split {
