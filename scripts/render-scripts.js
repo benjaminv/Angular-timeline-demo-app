@@ -11,8 +11,13 @@ module.exports = function renderScripts() {
     
     sh.cp('-R', sourcePath, destPath)
 
+    // Core JS
     const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/scripts.js');
     const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/scripts.js');
+
+    // App Js
+    const sourcePathAppJS = upath.resolve(upath.dirname(__filename), '../src/js/page.js');
+    const destPathAppJS = upath.resolve(upath.dirname(__filename), '../dist/js/page.js');
     
     const copyright = `/*!
 * Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
@@ -21,6 +26,8 @@ module.exports = function renderScripts() {
 */
 `
     const scriptsJS = fs.readFileSync(sourcePathScriptsJS);
+    const appJS = fs.readFileSync(sourcePathAppJS);
     
     fs.writeFileSync(destPathScriptsJS, copyright + scriptsJS);
+    fs.writeFileSync(destPathAppJS, appJS);
 };

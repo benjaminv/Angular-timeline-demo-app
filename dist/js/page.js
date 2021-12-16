@@ -173,3 +173,5 @@ let options = {
 
 // create a Timeline
 var timeline = new vis.Timeline(container, items, groups, options);
+
+// add a watch test line
