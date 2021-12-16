@@ -1,5 +1,21 @@
 @import "../js/plugins/vis-timeline/styles/vis-timeline-graph2d.min.css";
+/* customised timeline elements */
+#timeline-master {
+    position: relative;
+}
+#timeline-master .menu {
+    position: -webkit-sticky; /* Safari */
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 8px;
+    margin: 0 8px;
+    z-index: 9999;
+    text-align: right;
+}
 
+/* split window controls */
 .split-container {
     background: #f2f7f4;
     display: flex;
@@ -8,7 +24,15 @@
     top:0;
     height: calc(100vh - 115px);
   }
+
+  #flex-1 {
+      overflow-y: scroll;
+  }
   
+  #flex-2 {
+      overflow-y: scroll;
+  }
+    
   .split {
       display: flex;
       flex-direction: row;

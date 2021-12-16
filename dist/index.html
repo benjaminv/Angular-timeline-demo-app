@@ -12,6 +12,12 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- App Customise CSS -->
         <link href="css/app.css" rel="stylesheet" />
+
+        <!-- sweetalert cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert@1.1.3/dist/sweetalert.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert@1.1.3/dist/sweetalert.css" rel="stylesheet" type="text/css"/>
+
+
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -41,7 +47,16 @@
             <div class="split-container mt-2">
                 <div id="flex-1">flex-1 content</div>
                 <div id="flex-2">
-                    <div id="timeline-master"></div>
+                    <div id="timeline-master">
+                        <div class="menu">
+                            <span type="button" class="mx-2" id="zoomIn"><i class="fas fa-search-plus"></i></span> 
+                            <span type="button" class="mx-2" id="zoomOut"><i class="fas fa-search-minus"></i></span> 
+                            <span type="button" class="mx-2" id="moveLeft"><i class="fas fa-angle-double-left"></i></span> 
+                            <span type="button" class="mx-2" id="moveRight"><i class="fas fa-angle-double-right"></i></span> 
+                            <span type="button" class="mx-2" id="fit"><i class="fas fa-arrows-alt-h"></i></span> 
+                            <span type="button" class="mx-2" id="toggleRollingMode"><i class="fas fa-grip-lines-vertical"></i></span> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
